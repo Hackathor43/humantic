@@ -28,9 +28,11 @@ function App() {
         modData.items.push({"name":inputVal,"isFolder" : true,"items":[]});
         setData(modData);
         setInputVal('');
+        setError(false);
       }
       else{
         //throw error
+        setError(true);
       }
     }
     console.log(modData);
